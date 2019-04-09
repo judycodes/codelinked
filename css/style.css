@@ -1,0 +1,233 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    line-height:1.6;
+    background:rgb(110,103,82);
+}
+
+.container-fluid {
+    padding:0;
+}
+
+h1, h2, h4, h5 {
+    font-family: 'Podkova', serif;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#me {
+    width:200px;
+    border:1px solid #fff;
+}
+
+.mob_hide {
+    display:none;
+}
+
+nav {
+    display:block;
+}
+
+#navbar, #media {
+    list-style-type: none;
+    display:flex;
+    
+    align-items: center;
+    border-radius:5px;
+}
+
+#navbar {
+    margin-top:5px;
+    justify-content:center;
+
+}
+
+#media {
+    padding-bottom:10px;
+    margin-bottom: 0;
+    justify-content:space-around;
+}
+
+.nav-link, .media-link, .proj-link {
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+}
+   
+
+#welcome-section {
+    height:100vh;
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-bottom: 0;
+    
+}
+
+#greet {
+    color:#fff;
+    font-size:5em;
+    font-family: 'Podkova', serif;
+    text-shadow: 2px 1px #70323E;
+}
+
+#subgreet {
+    color:#fff;
+    font-size:2em;
+    font-variant: small-caps;
+    font-family: 'Podkova', serif;
+    text-shadow: 2px 1px #70323E;
+}
+
+#about {
+    background-color:rgb(110,103,82);
+    background-color:rgba(110,103,82,0.8);
+    color:#fff;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+.row {
+    display:flex;
+    align-items:center;
+}
+
+#abt-text {
+    padding:10px;
+    margin:5px;
+}
+
+#abt-img {
+    width:100%;
+    margin-bottom:5px;
+    border:2px solid #fff;
+}
+
+#tech_skills {
+    color: #fff;
+    font-size:16px;
+    text-shadow:1px 1px 1px #000;
+    
+}
+
+#projects {
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+
+.proj-link {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projsec_title, #proj_contrib_title {
+    font-size:40px;
+    font-family: 'Podkova', serif;
+    color:#fff;
+    padding:40px 10px;
+    margin:10px;
+}
+
+.proj-text {
+    font-size:25px;
+    font-family: 'Podkova', serif;
+    
+    border-bottom:2px dotted #fff;
+}
+
+.proj-text:hover, .proj-link:hover {
+    color:#70323E;
+    text-decoration: none;
+    text-shadow: 2px 1px #fff;
+    font-weight:bold;
+    
+}
+
+.proj-img {
+    width:65%;
+    border:8px double #C78337; 
+}
+
+.tech_stack {
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    padding-top:5px;
+
+}
+
+.project-tile {
+    margin-bottom:20px;
+    padding:0;
+}
+
+#contact {
+    background-color:rgb(110,103,82);
+    background-color:rgba(110,103,82,0.4);
+    margin:0;
+    color:#fff;
+}
+
+/* for desktops and laptops */
+@media only screen and (min-width: 700px) {
+    
+.media-link {
+    margin-right:15px;
+    padding:5px;
+    }    
+    
+#media {
+    justify-content: center;
+    }
+
+.nav-link
+    {
+    font-size:30px;
+}
+    
+.nav-link:hover, .media-link:hover {
+    color:#70323E;
+
+    padding: 5px 15px;
+    border-radius:5px;
+    font-size:30px;
+    text-decoration: none;
+}    
+    
+#abt-div {
+    border:5px solid #D8A873;
+    padding:20px;
+    font-size:18px;
+    }
+  
+#tech_skills {
+    border:5px solid #D8A873; 
+    font-size:20px;
+    }    
+    
+.mob_hide {
+    display:block;
+    }    
+        
+}
